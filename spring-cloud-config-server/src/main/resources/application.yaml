@@ -3,8 +3,16 @@ server:
 spring:
   application:
     name: spring-cloud-config-server
+  profiles:
+    active: dev
   cloud:
     config:
       server:
+        clone-on-start: true
         git:
           uri: https://github.com/MartinValchev/electronic-shop-project.git
+          username: MartinValchev
+          password: Prozoretz43@
+          search-paths:
+            - 'configs'
+          default-label: main
