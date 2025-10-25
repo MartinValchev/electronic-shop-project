@@ -1,0 +1,4 @@
+order:
+  service: 
+    min: 10
+    max: 12
